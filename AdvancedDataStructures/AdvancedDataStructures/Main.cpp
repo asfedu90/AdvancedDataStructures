@@ -5,6 +5,9 @@ using namespace std;
 
 int main()
 {
-	cout << " Hello World by Ajoy and Jennifer";
+	cout << " Hello World by Ajoy and Jennifer"<<endl;
+
+	cout << "Ajoy's Part";
+
 	return 0;
 }
