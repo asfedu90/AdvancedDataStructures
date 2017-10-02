@@ -72,7 +72,7 @@ vector<int> ArrayGenerator::GetRandArray(int size)
 vector<int> ArrayGenerator::ModifyArrayValue(vector<int> vectorToChange, int idxToChange, int idxValue)
 {
 
-	vectorToChange[idxToChange-1] = idxValue;
+	vectorToChange[idxToChange] = idxValue;
 
 	return vectorToChange;
 

@@ -2,6 +2,8 @@
 #include <iostream>
 #include "ArrayGenerator.h"
 #include "Timer.h"
+#include "SearchAlgorithms.h"
+#include "SortingAlgorithms.h"
 using namespace std;
 
 
@@ -57,8 +59,8 @@ int main()
 	ArrayGenerator arrayGen;
 	timer.StartTimer();
 
-	vector<int> tempArray4 = arrayGen.GetRandArray(1000000);
-	//arrayGen.PrintArray(tempArray4);
+	vector<int> tempArray4 = arrayGen.GetRandArray(10000);
+	arrayGen.PrintArray(tempArray4);
 
 	double totalTime = timer.EndTimer();
 	cout << totalTime<<endl;
@@ -71,7 +73,51 @@ int main()
 	
 	cout << "point of time 2 press enter";
 	cin >> temp;
+
+
+	
+	Timer timer;
+	ArrayGenerator arrayGen;
+	
+	vector<int> tempArray5 = arrayGen.GetSmallToLargeSortedArray(100000);
+	//tempArray5 = arrayGen.ModifyArrayValue(tempArray5, 565, 99);
+	//arrayGen.PrintArray(tempArray5);
+
+	SearchAlgorithms searchAlgos; 
+	timer.StartTimer();
+	cout << searchAlgos.LinearSearch_Lec(tempArray5, 96810) << endl;;
+	double totalTime = timer.EndTimer();
+	cout << totalTime << endl;
+	
+	timer.StartTimer();
+	cout << searchAlgos.LinearSearch_LecMod(tempArray5, 96810) << endl;;
+	totalTime = timer.EndTimer();
+	cout << totalTime << endl;
+
+	timer.StartTimer();
+	cout << searchAlgos.LinearSearch_Ajoy(tempArray5, 96810) << endl;;
+	totalTime = timer.EndTimer();
+	cout << totalTime << endl;
+
+
+	timer.StartTimer();
+	cout << searchAlgos.BinarySearch_Lec(tempArray5, 96810) << endl;;
+	totalTime = timer.EndTimer();
+	cout << totalTime << endl;
+
 	*/
+	SortingAlgorithms sortAlgos;
+	ArrayGenerator arrayGen;
+	
+	vector<int> tempArray6 = arrayGen.GetRandArray(30);
+	cout << "printing unsorted array" << endl;
+	arrayGen.PrintArray(tempArray6);
+
+	tempArray6 = sortAlgos.InsertionSort_Ajoy(tempArray6);
+	cout << "printing sorted array" << endl;
+	arrayGen.PrintArray(tempArray6);
+	
+	//vector <int> SortingAlgorithms::BubbleSort_Lec(vector<int> Arr)
 
 
 	return 0;

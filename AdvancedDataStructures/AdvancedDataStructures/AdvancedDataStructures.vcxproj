@@ -146,6 +146,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ArrayGenerator.h" />
+    <ClInclude Include="SearchAlgorithms.h" />
+    <ClInclude Include="SortingAlgorithms.h" />
     <ClInclude Include="Timer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

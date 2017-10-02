@@ -1,5 +1,6 @@
 ﻿  Main.cpp
-c:\users\ajoy savio fernandes\documents\github\advanceddatastructures\advanceddatastructures\advanceddatastructures\arraygenerator.h(25): warning C4018: '<': signed/unsigned mismatch
-c:\users\ajoy savio fernandes\documents\github\advanceddatastructures\advanceddatastructures\advanceddatastructures\arraygenerator.h(93): warning C4018: '<': signed/unsigned mismatch
-  AdvancedDataStructures.vcxproj -> C:\Users\Ajoy Savio Fernandes\Documents\GitHub\AdvancedDataStructures\AdvancedDataStructures\Debug\AdvancedDataStructures.exe
-  AdvancedDataStructures.vcxproj -> C:\Users\Ajoy Savio Fernandes\Documents\GitHub\AdvancedDataStructures\AdvancedDataStructures\Debug\AdvancedDataStructures.pdb (Full PDB)
+c:\users\jennifer ward\documents\github\advanceddatastructures\advanceddatastructures\advanceddatastructures\arraygenerator.h(25): warning C4018: '<': signed/unsigned mismatch
+c:\users\jennifer ward\documents\github\advanceddatastructures\advanceddatastructures\advanceddatastructures\arraygenerator.h(93): warning C4018: '<': signed/unsigned mismatch
+c:\users\jennifer ward\documents\github\advanceddatastructures\advanceddatastructures\advanceddatastructures\searchalgorithms.h(52): warning C4018: '>=': signed/unsigned mismatch
+  AdvancedDataStructures.vcxproj -> C:\Users\Jennifer Ward\Documents\GitHub\AdvancedDataStructures\AdvancedDataStructures\Debug\AdvancedDataStructures.exe
+  AdvancedDataStructures.vcxproj -> C:\Users\Jennifer Ward\Documents\GitHub\AdvancedDataStructures\AdvancedDataStructures\Debug\AdvancedDataStructures.pdb (Full PDB)
