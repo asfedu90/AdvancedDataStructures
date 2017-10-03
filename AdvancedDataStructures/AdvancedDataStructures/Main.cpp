@@ -4,6 +4,7 @@
 #include "Timer.h"
 #include "SearchAlgorithms.h"
 #include "SortingAlgorithms.h"
+#include "GreedyParadigm.h"
 using namespace std;
 
 
@@ -106,7 +107,7 @@ int main()
 	cout << totalTime << endl;
 
 	*/
-	SortingAlgorithms sortAlgos;
+	GreedyAlgorithms sortAlgos;
 	ArrayGenerator arrayGen;
 	
 	vector<int> tempArray6 = arrayGen.GetRandArray(30);

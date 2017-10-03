@@ -5,11 +5,11 @@
 #include <string>
 using namespace std;
 
-class SortingAlgorithms
+class GreedyAlgorithms
 {
 public:
-	SortingAlgorithms();
-	~SortingAlgorithms();
+	GreedyAlgorithms();
+	~GreedyAlgorithms();
 	vector<int>BubbleSort_Lec (vector<int>);
 
 	//vector<int> BubbleSort_Ajoy (vector<int>);
@@ -21,16 +21,16 @@ private:
 
 };
 
-SortingAlgorithms::SortingAlgorithms()
+GreedyAlgorithms::GreedyAlgorithms()
 {
 }
 
-SortingAlgorithms::~SortingAlgorithms()
+GreedyAlgorithms::~GreedyAlgorithms()
 {
 }
 
 
-vector <int> SortingAlgorithms::BubbleSort_Lec(vector<int> Arr)
+vector <int> GreedyAlgorithms::BubbleSort_Lec(vector<int> Arr)
 
 {
 	int size = Arr.size();
@@ -46,7 +46,7 @@ vector <int> SortingAlgorithms::BubbleSort_Lec(vector<int> Arr)
 	}
 	return Arr;
 }
-vector <int> SortingAlgorithms::InsertionSort_Lec(vector<int> Arr)
+vector <int> GreedyAlgorithms::InsertionSort_Lec(vector<int> Arr)
 {
 	int size = Arr.size();
 	for (int j = 1; j < size - 1; j++)
@@ -66,7 +66,7 @@ vector <int> SortingAlgorithms::InsertionSort_Lec(vector<int> Arr)
 	return Arr;
 }
 
-vector <int> SortingAlgorithms::InsertionSort_Ajoy(vector<int> arr)
+vector <int> GreedyAlgorithms::InsertionSort_Ajoy(vector<int> arr)
 {
 	int i, key, j;
 	int size = arr.size();
