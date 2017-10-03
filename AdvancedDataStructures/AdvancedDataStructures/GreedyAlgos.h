@@ -1,4 +1,4 @@
-#pragma once
+/*#pragma once
 #include<stdlib.h>
 #include <vector>
 #include <ctime>
@@ -76,7 +76,7 @@ vector <int> GreedyAlgorithms::Greedy_Lec(vector<int> Arr)
 			}
 
 		}
-	}
+	}*/
 	//for (int i = 0; i < size - 1; i++)
 	//{
 		//for (int j = 0; j<size - i - 1; j++)
@@ -88,7 +88,9 @@ vector <int> GreedyAlgorithms::Greedy_Lec(vector<int> Arr)
 			//}
 //	}
 	//return Arr;
-}
+//}
+
+
 /*
 vector <int> GreedyAlgorithms::Greedy2_Lec(vector<int> Arr)
 {

@@ -2,22 +2,5 @@
 c:\users\jennifer ward\documents\github\advanceddatastructures\advanceddatastructures\advanceddatastructures\arraygenerator.h(25): warning C4018: '<': signed/unsigned mismatch
 c:\users\jennifer ward\documents\github\advanceddatastructures\advanceddatastructures\advanceddatastructures\arraygenerator.h(93): warning C4018: '<': signed/unsigned mismatch
 c:\users\jennifer ward\documents\github\advanceddatastructures\advanceddatastructures\advanceddatastructures\searchalgorithms.h(52): warning C4018: '>=': signed/unsigned mismatch
-c:\users\jennifer ward\documents\github\advanceddatastructures\advanceddatastructures\advanceddatastructures\greedyparadigm.h(9): error C2011: 'GreedyAlgorithms': 'class' type redefinition
-  c:\users\jennifer ward\documents\github\advanceddatastructures\advanceddatastructures\advanceddatastructures\sortingalgorithms.h(9): note: see declaration of 'GreedyAlgorithms'
-c:\users\jennifer ward\documents\github\advanceddatastructures\advanceddatastructures\advanceddatastructures\greedyparadigm.h(22): error C2027: use of undefined type 'GreedyAlgorithms'
-  c:\users\jennifer ward\documents\github\advanceddatastructures\advanceddatastructures\advanceddatastructures\sortingalgorithms.h(9): note: see declaration of 'GreedyAlgorithms'
-c:\users\jennifer ward\documents\github\advanceddatastructures\advanceddatastructures\advanceddatastructures\greedyparadigm.h(22): error C2059: syntax error: ')'
-c:\users\jennifer ward\documents\github\advanceddatastructures\advanceddatastructures\advanceddatastructures\greedyparadigm.h(23): error C2143: syntax error: missing ';' before '{'
-c:\users\jennifer ward\documents\github\advanceddatastructures\advanceddatastructures\advanceddatastructures\greedyparadigm.h(23): error C2447: '{': missing function header (old-style formal list?)
-c:\users\jennifer ward\documents\github\advanceddatastructures\advanceddatastructures\advanceddatastructures\greedyparadigm.h(26): error C2027: use of undefined type 'GreedyAlgorithms'
-  c:\users\jennifer ward\documents\github\advanceddatastructures\advanceddatastructures\advanceddatastructures\sortingalgorithms.h(9): note: see declaration of 'GreedyAlgorithms'
-c:\users\jennifer ward\documents\github\advanceddatastructures\advanceddatastructures\advanceddatastructures\greedyparadigm.h(26): error C2059: syntax error: ')'
-c:\users\jennifer ward\documents\github\advanceddatastructures\advanceddatastructures\advanceddatastructures\greedyparadigm.h(27): error C2143: syntax error: missing ';' before '{'
-c:\users\jennifer ward\documents\github\advanceddatastructures\advanceddatastructures\advanceddatastructures\greedyparadigm.h(27): error C2447: '{': missing function header (old-style formal list?)
-c:\users\jennifer ward\documents\github\advanceddatastructures\advanceddatastructures\advanceddatastructures\greedyparadigm.h(31): error C2027: use of undefined type 'GreedyAlgorithms'
-  c:\users\jennifer ward\documents\github\advanceddatastructures\advanceddatastructures\advanceddatastructures\sortingalgorithms.h(9): note: see declaration of 'GreedyAlgorithms'
-c:\users\jennifer ward\documents\github\advanceddatastructures\advanceddatastructures\advanceddatastructures\greedyparadigm.h(57): error C2561: 'Greedy_Lec': function must return a value
-  c:\users\jennifer ward\documents\github\advanceddatastructures\advanceddatastructures\advanceddatastructures\greedyparadigm.h(31): note: see declaration of 'Greedy_Lec'
-c:\users\jennifer ward\documents\github\advanceddatastructures\advanceddatastructures\advanceddatastructures\main.cpp(110): error C2079: 'sortAlgos' uses undefined class 'GreedyAlgorithms'
-c:\users\jennifer ward\documents\github\advanceddatastructures\advanceddatastructures\advanceddatastructures\main.cpp(117): error C2228: left of '.InsertionSort_Ajoy' must have class/struct/union
-  c:\users\jennifer ward\documents\github\advanceddatastructures\advanceddatastructures\advanceddatastructures\main.cpp(117): note: type is 'int'
+  AdvancedDataStructures.vcxproj -> C:\Users\Jennifer Ward\Documents\GitHub\AdvancedDataStructures\AdvancedDataStructures\Debug\AdvancedDataStructures.exe
+  AdvancedDataStructures.vcxproj -> C:\Users\Jennifer Ward\Documents\GitHub\AdvancedDataStructures\AdvancedDataStructures\Debug\AdvancedDataStructures.pdb (Full PDB)

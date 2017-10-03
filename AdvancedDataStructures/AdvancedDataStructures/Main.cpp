@@ -4,7 +4,7 @@
 #include "Timer.h"
 #include "SearchAlgorithms.h"
 #include "SortingAlgorithms.h"
-#include "GreedyParadigm.h"
+#include "GreedyAlgos.h"
 using namespace std;
 
 
