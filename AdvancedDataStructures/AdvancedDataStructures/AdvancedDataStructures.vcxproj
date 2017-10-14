@@ -146,6 +146,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ArrayGenerator.h" />
+    <ClInclude Include="Assignment1.h" />
+    <ClInclude Include="GreedyParadigm.h" />
+    <ClInclude Include="RecursionAlgos.h" />
     <ClInclude Include="SearchAlgorithms.h" />
     <ClInclude Include="SortingAlgorithms.h" />
     <ClInclude Include="Timer.h" />

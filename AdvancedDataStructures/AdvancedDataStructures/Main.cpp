@@ -5,6 +5,10 @@
 #include "SearchAlgorithms.h"
 #include "SortingAlgorithms.h"
 #include "GreedyAlgos.h"
+#include "RecursionAlgos.h" 
+#include "Assignment1.h"
+//FINAL! October 27 at school can take it onlilne (Canvas) with password (lockdown browser) can get help, 
+//come to class for professor's help (nfactorial=how many expensive operations).
 using namespace std;
 
 
@@ -106,7 +110,7 @@ int main()
 	totalTime = timer.EndTimer();
 	cout << totalTime << endl;
 
-	*/
+
 	GreedyAlgorithms sortAlgos;
 	ArrayGenerator arrayGen;
 	
@@ -120,6 +124,33 @@ int main()
 	
 	//vector <int> SortingAlgorithms::BubbleSort_Lec(vector<int> Arr)
 
+	
 
+	RecursionAlgos recursionAlgos;
+	int numNuclearWaste = 5; 
+	numNuclearWaste = recursionAlgos.Quin_WasteReleaser_v1(numNuclearWaste);
+	cout <<"I have come back with " <<  numNuclearWaste;
+	
+
+RecursionAlgos recursionAlgos;
+int x = 5;
+int levels = 0;
+int value = 0;
+value = recursionAlgos.Fib1(x);
+cout << "I have come back with " << value;
+//cout << "I have passed " << levels << " levels.";
+*/
+
+RecursionAlgos recursive;
+int idx = 0;
+ArrayGenerator arrayGen;
+
+vector<int> arr= arrayGen.GetRandArray(20);
+cout << "Printing through loop:" << endl;
+arrayGen.PrintArray(arr);
+cout << "Printing through recursion:" << endl;
+recursive.RecursivePrint(arr, idx);
+cout << endl << "recursively printing backwards" << endl;
+recursive.RecursivePrintBack1(arr, idx);
 	return 0;
 }

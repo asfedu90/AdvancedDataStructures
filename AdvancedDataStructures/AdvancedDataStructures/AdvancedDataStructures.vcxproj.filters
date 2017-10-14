@@ -35,5 +35,11 @@
     <ClInclude Include="GreedyParadigm.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="RecursionAlgos.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Assignment1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

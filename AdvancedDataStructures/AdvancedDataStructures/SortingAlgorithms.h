@@ -16,6 +16,9 @@ public:
 	vector<int>InsertionSort_Lec(vector<int>);
 	vector<int>InsertionSort_Ajoy(vector<int>);
 	//vector<int> InsertionSort_Ajoy(vector<int>);
+	//vecotr<int> MergeSort_Lec(vector<int>);
+	//vecotr<int> MergeSort_Lec_Ajoy(vector<int>);
+
 
 private:
 
