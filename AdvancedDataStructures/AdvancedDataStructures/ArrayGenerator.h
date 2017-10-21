@@ -16,9 +16,43 @@ public:
 	vector<int>GetRandArray(int size);
 	vector<int>GetUserSpecifiedArray();
 	vector<int> ModifyArrayValue(vector<int> vectorToChange, int size, int deleteElement);
+	vector<int> GuidedUserDefinedArray();
+	//void PrintDynamicallyAllocatedArray(int*userDefinedArray); 
 private:
 
 };
+
+/*
+void PrintDynamicallyAllocatedArray(int*userDefinedArray)
+{
+
+} */
+
+vector<int> ArrayGenerator::GuidedUserDefinedArray()
+{
+	//functions prompts user for length of array and each element to fill array
+	//promts user for size of array
+	//loops through elements and assigns them to proper index
+
+	int userDefinedSize = 0;
+
+	cout << "How many elements are in your array?" << endl;
+	cin >> userDefinedSize;
+	vector <int> userArray(userDefinedSize);
+	
+	for (int i = 0; i < userDefinedSize; i++)
+	{
+		cout << "Enter the value for element at index: " << i << endl;
+		int userImput = 0;
+		cin >> userImput;
+		userArray[i] = userImput;
+	}
+	
+	return userArray;
+
+	//dereference to free memeory;
+
+}
 
 void ArrayGenerator::PrintArray(vector<int> vecToPrint) //vector is now called vecToPrint...function will print any vector
 {

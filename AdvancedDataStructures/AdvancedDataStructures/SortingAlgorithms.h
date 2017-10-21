@@ -5,11 +5,11 @@
 #include <string>
 using namespace std;
 
-class GreedyAlgorithms
+class SortingAlgorithms
 {
 public:
-	GreedyAlgorithms();
-	~GreedyAlgorithms();
+	SortingAlgorithms();
+	~SortingAlgorithms();
 	vector<int>BubbleSort_Lec (vector<int>);
 
 	//vector<int> BubbleSort_Ajoy (vector<int>);
@@ -18,22 +18,22 @@ public:
 	//vector<int> InsertionSort_Ajoy(vector<int>);
 	//vecotr<int> MergeSort_Lec(vector<int>);
 	//vecotr<int> MergeSort_Lec_Ajoy(vector<int>);
-
+	vector <int>SelectionSort(vector<int>);
 
 private:
 
 };
 
-GreedyAlgorithms::GreedyAlgorithms()
+SortingAlgorithms::SortingAlgorithms()
 {
 }
 
-GreedyAlgorithms::~GreedyAlgorithms()
+SortingAlgorithms::~SortingAlgorithms()
 {
 }
 
 
-vector <int> GreedyAlgorithms::BubbleSort_Lec(vector<int> Arr)
+vector <int> SortingAlgorithms::BubbleSort_Lec(vector<int> Arr)
 
 {
 	int size = Arr.size();
@@ -49,7 +49,7 @@ vector <int> GreedyAlgorithms::BubbleSort_Lec(vector<int> Arr)
 	}
 	return Arr;
 }
-vector <int> GreedyAlgorithms::InsertionSort_Lec(vector<int> Arr)
+vector <int> SortingAlgorithms::InsertionSort_Lec(vector<int> Arr)
 {
 	int size = Arr.size();
 	for (int j = 1; j < size - 1; j++)
@@ -69,7 +69,7 @@ vector <int> GreedyAlgorithms::InsertionSort_Lec(vector<int> Arr)
 	return Arr;
 }
 
-vector <int> GreedyAlgorithms::InsertionSort_Ajoy(vector<int> arr)
+vector <int> SortingAlgorithms::InsertionSort_Ajoy(vector<int> arr)
 {
 	int i, key, j;
 	int size = arr.size();
@@ -90,4 +90,31 @@ vector <int> GreedyAlgorithms::InsertionSort_Ajoy(vector<int> arr)
 		arr[j + 1] = key;
 	}
 	return arr;
+}
+
+vector <int> SortingAlgorithms::SelectionSort(vector<int> array)
+//
+{
+	for (int i = 0; i < array.size()-1; i++)
+		//loop through each element in given array except last one
+	{
+		int maxIndex = i; 
+		for (int j = i + 1; j < array.size(); j++) //find maximum index in remaining elements
+		{
+			if (array[j] > array[maxIndex])
+			{
+				maxIndex = j; //store position of maximum index
+			}
+			int temp = array[i];
+			array[i] = array[maxIndex];
+			array[maxIndex] = temp;
+		}
+		//after finding the maximum index for this iteration.... 
+		//swap current value with value from maxindex
+		/*Alternately you can put this content outside the loop:
+		int temp = array[i];
+		array[i] = array[maxIndex];
+		array[maxIndex] = temp;*/
+	}
+	return array;
 }

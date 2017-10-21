@@ -5,11 +5,11 @@
 #include <string>
 using namespace std;
 
-class GreedyAlgorithms
+class SortingAlgorithms
 {
 public:
-	GreedyAlgorithms();
-	~GreedyAlgorithms();
+	SortingAlgorithms();
+	~SortingAlgorithms();
 
 	vector<int>Greedy_Lec(vector<int>);
 	vector<int>Greedy_Ajoy(vector<int>);
@@ -19,16 +19,16 @@ private:
 
 };
 
-GreedyAlgorithms::GreedyAlgorithms()
+SortingAlgorithms::SortingAlgorithms()
 {
 }
 
-GreedyAlgorithms::~GreedyAlgorithms()
+SortingAlgorithms::~SortingAlgorithms()
 {
 }
 
 
-vector <int> GreedyAlgorithms::Greedy_Lec(vector<int> Arr)
+vector <int> SortingAlgorithms::Greedy_Lec(vector<int> Arr)
 
 {
 	//Example: design a greedy algorithm for making change of n cents with the following coins: 

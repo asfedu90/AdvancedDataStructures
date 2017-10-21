@@ -7,10 +7,12 @@
 #include "GreedyAlgos.h"
 #include "RecursionAlgos.h" 
 #include "Assignment1.h"
+#include "Euclidian.h"
 //FINAL! October 27 at school can take it onlilne (Canvas) with password (lockdown browser) can get help, 
 //come to class for professor's help (nfactorial=how many expensive operations).
 using namespace std;
 
+vector<int>  GetTwoIntegers();
 
 int main()
 {
@@ -139,7 +141,7 @@ int value = 0;
 value = recursionAlgos.Fib1(x);
 cout << "I have come back with " << value;
 //cout << "I have passed " << levels << " levels.";
-*/
+
 
 RecursionAlgos recursive;
 int idx = 0;
@@ -151,6 +153,43 @@ arrayGen.PrintArray(arr);
 cout << "Printing through recursion:" << endl;
 recursive.RecursivePrint(arr, idx);
 cout << endl << "recursively printing backwards" << endl;
-recursive.RecursivePrintBack1(arr, idx);
+recursive.RecursivePrintBack1(arr, idx); */
+
+ArrayGenerator arrayGenAssg2;
+/*
+vector <int> storage= arrayGenAssg2.GuidedUserDefinedArray();
+arrayGenAssg2.PrintArray(storage);
+SortingAlgorithms sorter;
+storage= sorter.SelectionSort(storage);
+arrayGenAssg2.PrintArray(storage);
+*/
+
+vector<int> tempVector= GetTwoIntegers();
+arrayGenAssg2.PrintArray(tempVector);
+
 	return 0;
+} 
+
+//EEA()
+/*
+This function get two integers from user, and stores them in a vector
+and returns that vector.
+*/
+vector<int>  GetTwoIntegers()
+
+{
+	vector<int> twoNum;
+	cout << "Type first number: ";
+	int temp;
+	cin >> temp;
+	twoNum.push_back(temp);
+
+
+	cout << "Type second  number: ";
+	int temp2;
+	cin >> temp2;
+	twoNum.push_back(temp2);
+
+	return twoNum;
+
 }
