@@ -1,9 +1,9 @@
 ﻿  Main.cpp
-c:\users\jennifer ward\documents\github\advanceddatastructures\advanceddatastructures\advanceddatastructures\arraygenerator.h(59): warning C4018: '<': signed/unsigned mismatch
-c:\users\jennifer ward\documents\github\advanceddatastructures\advanceddatastructures\advanceddatastructures\arraygenerator.h(127): warning C4018: '<': signed/unsigned mismatch
-c:\users\jennifer ward\documents\github\advanceddatastructures\advanceddatastructures\advanceddatastructures\searchalgorithms.h(52): warning C4018: '>=': signed/unsigned mismatch
-c:\users\jennifer ward\documents\github\advanceddatastructures\advanceddatastructures\advanceddatastructures\sortingalgorithms.h(98): warning C4018: '<': signed/unsigned mismatch
-c:\users\jennifer ward\documents\github\advanceddatastructures\advanceddatastructures\advanceddatastructures\sortingalgorithms.h(102): warning C4018: '<': signed/unsigned mismatch
-c:\users\jennifer ward\documents\github\advanceddatastructures\advanceddatastructures\advanceddatastructures\recursionalgos.h(125): warning C4018: '<': signed/unsigned mismatch
-  AdvancedDataStructures.vcxproj -> C:\Users\Jennifer Ward\Documents\GitHub\AdvancedDataStructures\AdvancedDataStructures\Debug\AdvancedDataStructures.exe
-  AdvancedDataStructures.vcxproj -> C:\Users\Jennifer Ward\Documents\GitHub\AdvancedDataStructures\AdvancedDataStructures\Debug\AdvancedDataStructures.pdb (Full PDB)
+c:\users\ajoy savio fernandes\documents\github\advanceddatastructures\advanceddatastructures\advanceddatastructures\arraygenerator.h(59): warning C4018: '<': signed/unsigned mismatch
+c:\users\ajoy savio fernandes\documents\github\advanceddatastructures\advanceddatastructures\advanceddatastructures\arraygenerator.h(127): warning C4018: '<': signed/unsigned mismatch
+c:\users\ajoy savio fernandes\documents\github\advanceddatastructures\advanceddatastructures\advanceddatastructures\searchalgorithms.h(52): warning C4018: '>=': signed/unsigned mismatch
+c:\users\ajoy savio fernandes\documents\github\advanceddatastructures\advanceddatastructures\advanceddatastructures\sortingalgorithms.h(98): warning C4018: '<': signed/unsigned mismatch
+c:\users\ajoy savio fernandes\documents\github\advanceddatastructures\advanceddatastructures\advanceddatastructures\sortingalgorithms.h(102): warning C4018: '<': signed/unsigned mismatch
+c:\users\ajoy savio fernandes\documents\github\advanceddatastructures\advanceddatastructures\advanceddatastructures\recursionalgos.h(125): warning C4018: '<': signed/unsigned mismatch
+  AdvancedDataStructures.vcxproj -> C:\Users\Ajoy Savio Fernandes\Documents\GitHub\AdvancedDataStructures\AdvancedDataStructures\Debug\AdvancedDataStructures.exe
+  AdvancedDataStructures.vcxproj -> C:\Users\Ajoy Savio Fernandes\Documents\GitHub\AdvancedDataStructures\AdvancedDataStructures\Debug\AdvancedDataStructures.pdb (Full PDB)

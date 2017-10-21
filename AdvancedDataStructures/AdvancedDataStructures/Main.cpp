@@ -13,7 +13,8 @@
 using namespace std;
 
 vector<int>  GetTwoIntegers();
-
+void ExtendedEuclidian(int a, int b);
+void ExtendedEuclidian2(int a, int b);
 int main()
 {
 
@@ -164,8 +165,10 @@ storage= sorter.SelectionSort(storage);
 arrayGenAssg2.PrintArray(storage);
 */
 
-vector<int> tempVector= GetTwoIntegers();
-arrayGenAssg2.PrintArray(tempVector);
+//vector<int> tempVector= GetTwoIntegers();
+//arrayGenAssg2.PrintArray(tempVector);
+ExtendedEuclidian2(252, 198);
+
 
 	return 0;
 } 
@@ -191,5 +194,67 @@ vector<int>  GetTwoIntegers()
 	twoNum.push_back(temp2);
 
 	return twoNum;
+
+}
+
+void ExtendedEuclidian(int a, int b)
+{
+	int s = 0;
+	int old_s = 1;
+	int t = 1;
+	int old_t = 0;
+	int r = b;
+	int old_r = a;
+	while (r != 0)
+	{
+		int q = old_r / r;
+
+		int temp = old_r -(q*r);
+		old_r = r;
+		r = (temp);
+		
+
+		int temp2 = old_s - (q * s);
+		old_s = s;
+		s = temp2;
+		//old_s = temp2;
+		
+		int temp3 = old_t - (q * t);
+		old_t = t;
+		t = temp3;
+	}
+	cout << "GCD= " << old_r  << endl;
+	cout << old_t << endl;
+	cout << old_s << endl;
+	
+}
+
+void ExtendedEuclidian2(int a, int b)
+{
+	int s = 0;
+	int old_s = 1;
+	int t = 1;
+	int old_t = 0;
+
+	while (b != 0)
+	{
+		int q = a / b;
+
+		int temp = a % b;
+		a = b;
+		b = (temp);
+
+
+		int temp2 = old_s - (q * s);
+		old_s = s;
+		s = temp2;
+
+		int temp3 = old_t - (q * t);
+		old_t = t;
+		t = temp3;
+	}
+	cout << "GCD= " << a << endl;
+	cout << old_t << endl;
+	cout << old_s << endl;
 
 }
