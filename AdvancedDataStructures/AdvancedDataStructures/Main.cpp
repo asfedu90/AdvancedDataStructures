@@ -15,6 +15,8 @@ using namespace std;
 vector<int>  GetTwoIntegers();
 void ExtendedEuclidian(int a, int b);
 void ExtendedEuclidian2(int a, int b);
+vector<int> GuidedUserDefinedArray();
+vector<int> TwoLargest();
 int main()
 {
 
@@ -167,8 +169,10 @@ arrayGenAssg2.PrintArray(storage);
 
 //vector<int> tempVector= GetTwoIntegers();
 //arrayGenAssg2.PrintArray(tempVector);
-ExtendedEuclidian2(252, 198);
+//ExtendedEuclidian2(252, 198);
 
+vector<int> tempVec= TwoLargest();
+cout << tempVec[0]<< " " << tempVec[1];
 
 	return 0;
 } 
@@ -257,4 +261,59 @@ void ExtendedEuclidian2(int a, int b)
 	cout << old_t << endl;
 	cout << old_s << endl;
 
+}
+
+
+vector<int> GuidedUserDefinedArray()
+{
+	//functions prompts user for length of array and each element to fill array
+	//promts user for size of array
+	//loops through elements and assigns them to proper index
+
+	int userDefinedSize = 0;
+
+	cout << "How many elements are in your array?" << endl;
+	cin >> userDefinedSize;
+	vector <int> userArray(userDefinedSize);
+
+	for (int i = 0; i < userDefinedSize; i++)
+	{
+		cout << "Enter the value for element at index: " << i << endl;
+		int userImput = 0;
+		cin >> userImput;
+		userArray[i] = userImput;
+	}
+
+	return userArray;
+
+	//dereference to free memeory;
+
+}
+
+
+vector<int> TwoLargest()
+{
+	vector <int> a= GuidedUserDefinedArray();
+	
+
+	int large_1 = 0;
+	int large_2 = 0;
+
+	for (int i = 0; i < a.size(); i++)
+	{
+		if (a[i] > large_1)
+		{
+			large_2 = large_1;
+			large_1 = a[i];
+		}
+		else if (large_2 < a[i])
+		{
+			large_2 = a[i];
+		}
+	}
+	vector<int> twoLargest;
+	twoLargest.push_back(large_1);
+	twoLargest.push_back(large_2);
+
+	return twoLargest;
 }
