@@ -112,16 +112,16 @@ int SearchAlgorithms::BinarySearch_Ajoy(vector<int> arr, int key)
 
 	while (minIdx < maxIdx)
 	{
-		int midIdx = (minIdx + maxIdx) / 2; //floor is automatically calculated using int division
+		int m = (minIdx + maxIdx) / 2; //floor is automatically calculated using int division
 
-		if (key > arr[midIdx])
-			minIdx = midIdx + 1;
+		if (key > arr[m])
+			minIdx = m + 1;
 		else
-			maxIdx = midIdx;
+			maxIdx = m;
 	}
 
-	if (key == arr[minIdx])
-		return minIdx;
+	if (key == arr[minIdx]) //shouldn't this be index i?
+		return minIdx; //return i?
 	else
 		return - 1;
 
