@@ -5,11 +5,11 @@
 #include <string>
 using namespace std;
 
-class SortingAlgorithms
+class LinkedLists
 {
 public:
-	SortingAlgorithms();
-	~SortingAlgorithms();
+	LinkedLists();
+	~LinkedLists();
 	vector<int>BubbleSort_Lec (vector<int>);
 
 	//vector<int> BubbleSort_Ajoy (vector<int>);
@@ -24,16 +24,16 @@ private:
 
 };
 
-SortingAlgorithms::SortingAlgorithms()
+LinkedLists::LinkedLists()
 {
 }
 
-SortingAlgorithms::~SortingAlgorithms()
+LinkedLists::~LinkedLists()
 {
 }
 
 
-vector <int> SortingAlgorithms::BubbleSort_Lec(vector<int> Arr)
+vector <int> LinkedLists::BubbleSort_Lec(vector<int> Arr)
 
 {
 	int size = Arr.size();
@@ -49,7 +49,7 @@ vector <int> SortingAlgorithms::BubbleSort_Lec(vector<int> Arr)
 	}
 	return Arr;
 }
-vector <int> SortingAlgorithms::InsertionSort_Lec(vector<int> Arr)
+vector <int> LinkedLists::InsertionSort_Lec(vector<int> Arr)
 {
 	int size = Arr.size();
 	for (int j = 1; j < size - 1; j++)
@@ -69,7 +69,7 @@ vector <int> SortingAlgorithms::InsertionSort_Lec(vector<int> Arr)
 	return Arr;
 }
 
-vector <int> SortingAlgorithms::InsertionSort_Ajoy(vector<int> arr)
+vector <int> LinkedLists::InsertionSort_Ajoy(vector<int> arr)
 {
 	int i, key, j;
 	int size = arr.size();
@@ -92,7 +92,7 @@ vector <int> SortingAlgorithms::InsertionSort_Ajoy(vector<int> arr)
 	return arr;
 }
 
-vector <int> SortingAlgorithms::SelectionSort(vector<int> array)
+vector <int> LinkedLists::SelectionSort(vector<int> array)
 //
 {
 	for (int i = 0; i < array.size()-1; i++)

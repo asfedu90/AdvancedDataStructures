@@ -18,6 +18,7 @@ void ExtendedEuclidian2(int a, int b);
 vector<int> GuidedUserDefinedArray();
 vector<int> TwoLargest();
 vector<int> BinaryK(int k);
+int ModularExpo(int, vector<int>, int);
 int main()
 {
 
@@ -177,6 +178,8 @@ arrayGenAssg2.PrintArray(storage);
 
 vector<int> binary =  BinaryK(26);
 arrayGenAssg2.PrintArray(binary);
+
+cout << ModularExpo(91, BinaryK(33), 4);
 	return 0;
 } 
 
@@ -335,3 +338,33 @@ vector<int> BinaryK(int k)
 	}
 	return K;
 }
+
+int ModularExpo(int a, vector<int> K, int n)
+{
+	if (n == 1)
+	{
+		return 0;
+	}
+	int b = 1;
+	
+	if (K.size() == 0)
+	{
+		return b; 
+	}
+	int A = a;
+	if (K[0] = 1)
+	{
+		b = a; 
+	}
+	for (int i = 1; i <= K.size() -1 ; i++)
+	{
+		A = A*A%n;
+		if (K[i] = 1)
+		{
+			b = A*b %n;
+		}
+	}
+
+	return b; 
+}
+

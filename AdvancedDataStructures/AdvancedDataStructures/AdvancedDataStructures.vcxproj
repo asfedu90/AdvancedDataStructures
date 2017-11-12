@@ -149,6 +149,7 @@
     <ClInclude Include="Assignment1.h" />
     <ClInclude Include="Euclidian.h" />
     <ClInclude Include="GreedyParadigm.h" />
+    <ClInclude Include="LinkedLists.h" />
     <ClInclude Include="RecursionAlgos.h" />
     <ClInclude Include="SearchAlgorithms.h" />
     <ClInclude Include="SortingAlgorithms.h" />
