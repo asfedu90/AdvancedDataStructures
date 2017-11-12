@@ -17,7 +17,6 @@ void ExtendedEuclidian(int a, int b);
 void ExtendedEuclidian2(int a, int b);
 vector<int> GuidedUserDefinedArray();
 vector<int> TwoLargest();
-vector<int> BinaryK(int k);
 int main()
 {
 
@@ -172,11 +171,9 @@ arrayGenAssg2.PrintArray(storage);
 //arrayGenAssg2.PrintArray(tempVector);
 //ExtendedEuclidian2(252, 198);
 
-//vector<int> tempVec= TwoLargest();
-//cout << tempVec[0]<< " " << tempVec[1];
+vector<int> tempVec= TwoLargest();
+cout << tempVec[0]<< " " << tempVec[1];
 
-vector<int> binary =  BinaryK(26);
-arrayGenAssg2.PrintArray(binary);
 	return 0;
 } 
 
@@ -299,8 +296,8 @@ vector<int> TwoLargest()
 	vector <int> a= GuidedUserDefinedArray();
 	
 
-	int large_1=INT_MIN;
-	int large_2=INT_MIN;
+	int large_1 = 0;
+	int large_2 = 0;
 
 	for (int i = 0; i < a.size(); i++)
 	{
@@ -319,19 +316,4 @@ vector<int> TwoLargest()
 	twoLargest.push_back(large_2);
 
 	return twoLargest;
-}
-
-vector<int> BinaryK(int k)
-{
-	vector<int> K;
-	int temp = k;
-	int i = 0;
-
-	while (temp > 0) // temp will be 0, when k cannot be divided by 2 any further
-	{
-		K.push_back(temp % 2); //will give binary representation of K_i
-		temp = (temp - K[i]) / 2; 
-		i++;
-	}
-	return K;
 }
