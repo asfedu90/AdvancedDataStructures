@@ -44,8 +44,5 @@
     <ClInclude Include="Euclidian.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="LinkedLists.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>
