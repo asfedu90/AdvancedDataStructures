@@ -17,6 +17,10 @@ void ExtendedEuclidian(int a, int b);
 void ExtendedEuclidian2(int a, int b);
 vector<int> GuidedUserDefinedArray();
 vector<int> TwoLargest();
+<<<<<<< HEAD
+=======
+vector<int> BinaryK(int k);
+>>>>>>> parent of 389cdfa... beginning linked lists
 int main()
 {
 
@@ -174,6 +178,11 @@ arrayGenAssg2.PrintArray(storage);
 vector<int> tempVec= TwoLargest();
 cout << tempVec[0]<< " " << tempVec[1];
 
+<<<<<<< HEAD
+=======
+vector<int> binary =  BinaryK(26);
+arrayGenAssg2.PrintArray(binary);
+>>>>>>> parent of 389cdfa... beginning linked lists
 	return 0;
 } 
 
@@ -316,4 +325,22 @@ vector<int> TwoLargest()
 	twoLargest.push_back(large_2);
 
 	return twoLargest;
+<<<<<<< HEAD
+=======
+}
+
+vector<int> BinaryK(int k)
+{
+	vector<int> K;
+	int temp = k;
+	int i = 0;
+
+	while (temp > 0) // temp will be 0, when k cannot be divided by 2 any further
+	{
+		K.push_back(temp % 2); //will give binary representation of K_i
+		temp = (temp - K[i]) / 2; 
+		i++;
+	}
+	return K;
+>>>>>>> parent of 389cdfa... beginning linked lists
 }
